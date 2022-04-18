@@ -6,12 +6,12 @@ describe('Validation Four', () => {
         cy.request({
             method: 'GET',
             url: 'https://reqres.in/api/users/'
-        }).then((resp) => {
+        }).then(resp => {
             resp.status, {
                 delay: 3000
             }
             return resp
-        }).then((resp)=>{
+        }).then(resp=>{
             expect(resp.duration).to.not.greaterThan(1000)
             expect(resp.status).to.eql(200)
 

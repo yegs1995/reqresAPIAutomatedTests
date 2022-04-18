@@ -7,7 +7,7 @@ describe('Validation one',()=>{
         cy.request({
             method: 'GET',
             url:'https://reqres.in/api/users'
-        }).then((resp) => {
+        }).then(resp => {
             expect(resp.status).to.eq(200)
             cy.log("users with ODD id",resp.body.data.filter(num => num.id % 2))
           })

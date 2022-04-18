@@ -12,7 +12,7 @@ describe('Validation three', () => {
                 "name": user.name,
                 "job": user.job
             }
-        }).then((resp) => {
+        }).then(resp => {
             expect(resp.status).to.eq(200)
             expect(resp.body.name).to.eq(user.name)
             expect(resp.body.job).to.eq(user.job)
