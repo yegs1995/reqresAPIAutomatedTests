@@ -9,8 +9,7 @@ describe('Validation one',()=>{
             url:'https://reqres.in/api/users'
         }).then((resp) => {
             expect(resp.status).to.eq(200)
-            cy.log(resp.body.data)
-            expect(resp.body.total_pages).to.eq(2)
+            cy.log("users with ODD id",resp.body.data.filter(num => num.id % 2))
           })
 
     })

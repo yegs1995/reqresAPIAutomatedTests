@@ -17,7 +17,7 @@ describe('Validation Two',()=>{
         }).then((resp) => {
             expect(resp.status).to.eq(201)
             const resDate = new Date(resp.body.createdAt);
-            expect(resDate.toISOString().slice(0, 10)).to.eq(today)
+            expect(resDate.toISOString().slice(0, 10)).to.eq(today)            
           })
 
     })
