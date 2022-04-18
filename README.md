@@ -21,3 +21,9 @@
 	  3. Select the tool following the next criteria (Time for automation, knowledge and future improvements)
 	  4.  After defined the tool, Create the structure
 	  5. Finally, I added the test cases for every requirement
+
+  - **Future improvements**
+  1. Add Async functions
+  2. Integrate the automation tests in the CI/CD
+  3. Improve the structure following a partner
+  4. Add test cases where verify other request (Patch, Delete, Authorization...) 
