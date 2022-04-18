@@ -2,7 +2,6 @@
 
 describe('Validation Four', () => {
 
-
     it('Verify reponse time', () => {
         cy.request({
             method: 'GET',
@@ -11,10 +10,10 @@ describe('Validation Four', () => {
             resp.status, {
                 delay: 3000
             }
-            const reponseTime = resp.duration
-            return reponseTime
-        }).then((reponseTime)=>{
-            expect(reponseTime).to.not.greaterThan(1000)
+            return resp
+        }).then((resp)=>{
+            expect(resp.duration).to.not.greaterThan(1000)
+            expect(resp.status).to.eql(200)
 
         })
 
